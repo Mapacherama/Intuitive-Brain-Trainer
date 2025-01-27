@@ -11,8 +11,8 @@
     --text-dark: #333333; /* Dark text color for readability */
   
     /* Fonts */
-    --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-serif: 'Georgia', 'Times New Roman', serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Modern, elegant sans-serif */
+    --font-serif: "Georgia", "Times New Roman", serif;
   
     /* Shadows */
     --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -56,12 +56,13 @@
   
   h1, h2, h3, h4, h5, h6 {
     margin: 0 0 var(--space-md);
-    font-family: var(--font-serif);
+    font-family: var(--font-sans); /* Clean and modern typography */
     color: var(--dark-mint);
   }
   
   p {
     margin: 0 0 var(--space-md);
+    font-family: var(--font-sans); /* Readable and approachable for paragraphs */
   }
   
   button {
