@@ -7,8 +7,44 @@
   export let url = "";
 </script>
 
-<Router {url}>
-  <Header {routes} />
-  <Route path="/" component={Home} />
-  <Footer />
-</Router>
+<div class="app-container">
+  <Router {url}>
+    <Header {routes} />
+    <main class="main-content">
+      <div class="content-wrapper">
+        <Route path="/" component={Home} />
+      </div>
+    </main>
+    <Footer />
+  </Router>
+</div>
+
+<style>
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-content {
+    flex: 1;
+    width: 100%;
+  }
+
+  .content-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  :global(body) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+</style>

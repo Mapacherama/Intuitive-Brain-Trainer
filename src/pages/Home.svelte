@@ -4,7 +4,6 @@
   
   <main>
     <div class="hero">
-      <img src={brainLogo} class="logo" alt="Intuitive Brain Trainer Logo" />
       <h1>Intuitive Brain Trainer</h1>
       <p class="tagline">Unlock your intuition. Track, reflect, and grow.</p>
     </div>
@@ -108,6 +107,13 @@
   
     .cta-button:hover {
       background-color: var(--mint-green);
+    }
+  
+    :global(.wrapper) {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
     }
   </style>
   
