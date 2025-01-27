@@ -3,6 +3,7 @@
   import Header from "./components/Header.svelte";
   import Footer from "./components/Footer.svelte";
   import Home from "./pages/Home.svelte";
+  import About from "./pages/About.svelte";
   import { routes } from "./routes/index";
   export let url = "";
 </script>
@@ -13,6 +14,7 @@
     <main class="main-content">
       <div class="content-wrapper">
         <Route path="/" component={Home} />
+        <Route path="/about" component={About} />
       </div>
     </main>
     <Footer />

@@ -44,11 +44,6 @@
       padding: 2rem 0;
     }
   
-    .logo {
-      height: 8em;
-      margin-bottom: 1rem;
-    }
-  
     h1 {
       color: var(--mint-green);
       font-size: 2.5rem;
