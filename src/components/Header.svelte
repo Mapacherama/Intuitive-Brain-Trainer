@@ -17,6 +17,9 @@
             <li class="nav-item">
                 <Link to="/about" class="nav-link">About</Link>
             </li>
+            <li class="nav-item">
+                <Link to="/reflections" class="nav-link">Reflections</Link>
+            </li>
         </ul>
     </nav>
 </header>

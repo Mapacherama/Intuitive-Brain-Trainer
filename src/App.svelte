@@ -4,6 +4,7 @@
   import Footer from "./components/Footer.svelte";
   import Home from "./pages/Home.svelte";
   import About from "./pages/About.svelte";
+  import Reflections from "./pages/Reflections.svelte";
   import { routes } from "./routes/index";
   export let url = "";
 </script>
@@ -15,6 +16,7 @@
       <div class="content-wrapper">
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
+        <Route path="/reflections" component={Reflections} />
       </div>
     </main>
     <Footer />

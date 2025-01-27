@@ -42,95 +42,98 @@
   
   <style>
     .reflective-prompts-page {
-      max-width: 500px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: #333;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      color: white;
-      font-family: 'Arial', sans-serif;
+      max-width: 600px;
+      margin: var(--space-lg) auto;
+      padding: var(--space-lg);
+      background-color: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-light);
+      color: var(--text-dark);
+      font-family: var(--font-sans);
     }
   
     .header {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: var(--space-lg);
     }
   
     .header h1 {
-      font-size: 1.8rem;
-      color: #e53e3e;
+      font-size: 2rem;
+      color: var(--dark-mint);
+      margin-bottom: var(--space-md);
     }
   
     .header p {
       font-size: 1rem;
-      color: #ccc;
+      color: var(--text-dark);
     }
   
     .prompts-container {
-      margin-bottom: 2rem;
+      margin-bottom: var(--space-lg);
     }
   
     .prompt-item {
-      margin-bottom: 1.5rem;
+      margin-bottom: var(--space-lg);
     }
   
     .prompt-question {
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-weight: bold;
-      color: #e53e3e;
-      margin-bottom: 0.5rem;
+      color: var(--dark-mint);
+      margin-bottom: var(--space-sm);
       display: block;
     }
   
     textarea {
       width: 100%;
-      padding: 10px;
+      padding: var(--space-md);
       font-size: 1rem;
-      border: 1px solid #e53e3e;
-      border-radius: 5px;
-      background-color: #222;
-      color: #fff;
+      border: 1px solid var(--light-mint);
+      border-radius: var(--radius);
+      background-color: var(--light-mint);
+      color: var(--text-dark);
       resize: none;
-      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
     }
   
     textarea:focus {
-      border-color: #f56565;
+      border-color: var(--mint-green);
       outline: none;
-      box-shadow: 0 0 5px rgba(229, 62, 62, 0.7);
+      background-color: var(--white);
+      box-shadow: 0 0 5px rgba(152, 255, 152, 0.7);
     }
   
     .actions {
       text-align: center;
+      margin-top: var(--space-lg);
     }
   
     .btn {
-      padding: 10px 20px;
+      padding: var(--space-sm) var(--space-md);
       font-size: 1rem;
       border: none;
-      border-radius: 5px;
+      border-radius: var(--radius);
       cursor: pointer;
-      margin: 0 10px;
-      transition: background-color 0.3s ease;
+      margin: 0 var(--space-md);
+      transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
   
     .save-btn {
-      background-color: #4caf50;
-      color: white;
+      background-color: var(--mint-green);
+      color: var(--white);
     }
   
     .save-btn:hover {
-      background-color: #45a049;
+      background-color: var(--dark-mint);
     }
   
     .clear-btn {
-      background-color: #e53e3e;
-      color: white;
+      background-color: var(--dark-mint);
+      color: var(--white);
     }
   
     .clear-btn:hover {
-      background-color: #c53030;
+      background-color: var(--mint-green);
     }
   </style>
   
