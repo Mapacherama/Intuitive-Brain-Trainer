@@ -3,10 +3,7 @@
   import Header from "./components/Header.svelte";
   import Footer from "./components/Footer.svelte";
   import Home from "./pages/Home.svelte";
-
-  const routes = [
-    { path: "/", component: Home }
-  ];
+  import { routes } from "./routes/index";
 </script>
 
 <Header {routes} />
