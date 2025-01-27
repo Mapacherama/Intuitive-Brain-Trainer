@@ -4,12 +4,11 @@
   import Footer from "./components/Footer.svelte";
   import Home from "./pages/Home.svelte";
   import { routes } from "./routes/index";
+  export let url = "";
 </script>
 
-<Header {routes} />
-
-<Router>
+<Router {url}>
+  <Header {routes} />
   <Route path="/" component={Home} />
+  <Footer />
 </Router>
-
-<Footer />
